@@ -1,0 +1,76 @@
+/Users/giatran/.local/share/virtualenvs/usconsulate_insights-nI_fpNWl/lib/python3.9/site-packages/pandas/compat/__init__.py:124: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
+  warnings.warn(msg)
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.118:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+/Users/giatran/.local/share/virtualenvs/usconsulate_insights-nI_fpNWl/lib/python3.9/site-packages/pandas/compat/__init__.py:124: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
+  warnings.warn(msg)
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8502
+  Network URL: http://192.168.1.118:8502
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+2021-07-10 13:44:20.378 Traceback (most recent call last):
+  File "/Users/giatran/.local/share/virtualenvs/usconsulate_insights-nI_fpNWl/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3361, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'data/time'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/giatran/.local/share/virtualenvs/usconsulate_insights-nI_fpNWl/lib/python3.9/site-packages/streamlit/script_runner.py", line 349, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/giatran/Library/Mobile Documents/com~apple~CloudDocs/DataProjects/usconsulate_insights/dashboard.py", line 19, in <module>
+    data = load_data(100000)
+  File "/Users/giatran/Library/Mobile Documents/com~apple~CloudDocs/DataProjects/usconsulate_insights/dashboard.py", line 14, in load_data
+    data[DATE_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
+  File "/Users/giatran/.local/share/virtualenvs/usconsulate_insights-nI_fpNWl/lib/python3.9/site-packages/pandas/core/frame.py", line 3455, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/giatran/.local/share/virtualenvs/usconsulate_insights-nI_fpNWl/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3363, in get_loc
+    raise KeyError(key) from err
+KeyError: 'data/time'
+
+2021-07-10 13:46:55.348 Traceback (most recent call last):
+  File "/Users/giatran/.local/share/virtualenvs/usconsulate_insights-nI_fpNWl/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3361, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'data/time'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/giatran/.local/share/virtualenvs/usconsulate_insights-nI_fpNWl/lib/python3.9/site-packages/streamlit/script_runner.py", line 349, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/giatran/Library/Mobile Documents/com~apple~CloudDocs/DataProjects/usconsulate_insights/dashboard.py", line 19, in <module>
+    data = load_data(100000)
+  File "/Users/giatran/Library/Mobile Documents/com~apple~CloudDocs/DataProjects/usconsulate_insights/dashboard.py", line 14, in load_data
+    data[DATE_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
+  File "/Users/giatran/.local/share/virtualenvs/usconsulate_insights-nI_fpNWl/lib/python3.9/site-packages/pandas/core/frame.py", line 3455, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/giatran/.local/share/virtualenvs/usconsulate_insights-nI_fpNWl/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3363, in get_loc
+    raise KeyError(key) from err
+KeyError: 'data/time'
+
+  Stopping...
+  Stopping...
